@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #ffd8ff;
+  --secondary: #350b6c;
+  --inter: "Inter", sans-serif;
+}
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --font-inter: var(--inter);
+
+  --breakpoint-desktop: 1200px;
+  --breakpoint-tablet: 810px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  @apply antialiased;
+}
