@@ -6,6 +6,8 @@ import { useLocation } from "react-router";
 import Footer from "./components/footer";
 import CookiesPage from "./pages/CookiesPage";
 import TermsPage from "./pages/TermsPage";
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
+import DataSafety from "./pages/DataSafety";
 
 function App() {
   const location = useLocation();
@@ -18,6 +20,8 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/cookies" element={<CookiesPage />} />
           <Route path="/terms" element={<TermsPage />}></Route>
+          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="/data-safety" element={<DataSafety />} />
         </Routes>
         <Footer />
       </div>

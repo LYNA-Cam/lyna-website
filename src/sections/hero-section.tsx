@@ -40,7 +40,7 @@ const HeroSection = () => {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.3, ease: "linear", delay: 0.3 * 2 }}
         viewport={{ once: true }}
-        to={""}
+        to={"/#sign-up"}
         className="bg-secondary border-2 border-secondary text-white py-3 px-5 rounded-full text-xl font-medium max-tablet:order-4 hover:bg-transparent hover:text-secondary transition-colors duration-300"
       >
         Get Early Access

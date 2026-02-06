@@ -41,14 +41,16 @@ const Header = () => {
           <Link to={"/#howItWorks"}>How it works</Link>
         </div>
         <Link
-          to={""}
+          to={"/#sign-up"}
           className="h-full aspect-2/1 bg-primary rounded-full hidden desktop:flex justify-center items-center drop-shadow-sm font-semibold border border-primary hover:bg-white"
         >
           Sign Up
         </Link>
 
         <div
-          className={cn("rounded-full border-primary border z-9999 bg-white desktop:hidden")}
+          className={cn(
+            "rounded-full border-primary border z-9999 bg-white desktop:hidden"
+          )}
         >
           <Hamburger
             direction="left"
@@ -69,8 +71,12 @@ const Header = () => {
               <img src="/logo.svg" alt="logo" className="h-11 mx-auto" />
 
               <div className="mt-5 relative flex mx-auto flex-col items-center justify-center gap-y-4">
-                <Link to={"/#features"} className="font-semibold">Features</Link>
-                <Link to={"/#howItWorks"} className="font-semibold">How it works</Link>
+                <Link to={"/#features"} className="font-semibold">
+                  Features
+                </Link>
+                <Link to={"/#howItWorks"} className="font-semibold">
+                  How it works
+                </Link>
               </div>
             </motion.span>
           )}
